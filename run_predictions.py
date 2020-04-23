@@ -197,7 +197,7 @@ preds_path = '../data/hw02_preds'
 os.makedirs(preds_path, exist_ok=True) # create directory if needed
 
 # Set this parameter to True when you're done with algorithm development:
-done_tweaking = False
+done_tweaking = True
 
 '''
 Make predictions on the training set.
@@ -219,7 +219,7 @@ for i in range(len(file_names_train)):
     print(file_names_train[i], "Done")
 
     
-
+    '''
     ########## visualize to check
     img = cv2.imread(os.path.join(data_path,file_names_train[i]))
     cv2.imshow("original",img)
@@ -230,6 +230,7 @@ for i in range(len(file_names_train)):
     cv2.imshow("detected",img)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
+    '''
 
     
   
